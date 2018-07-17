@@ -10,6 +10,7 @@ import { LayoutModule } from "./components/layout/layout.module";
 import { HotDealsModule } from "./components/hot-deals/hot-deals.module";
 import { CouponsModule } from "./components/coupons/coupons.module";
 import { AppRoutingModule } from "./app-routing.module";
+import { DependenciesModule } from "./components/dependencies.module";
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { AppRoutingModule } from "./app-routing.module";
   ],
   imports: [
     BrowserModule,
-    CommonModule,
+    DependenciesModule,
     NavigationModule,
     AboutModule,
     DirectionsModule,

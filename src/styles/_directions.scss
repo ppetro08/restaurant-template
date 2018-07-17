@@ -1,0 +1,12 @@
+.google-maps {
+    width: 500px;
+    height: 500px;
+    &.google-maps-placeholder {
+        background-color: #e5e5e5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        color: #A9A9A9;
+    }
+}

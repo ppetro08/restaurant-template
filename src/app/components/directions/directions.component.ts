@@ -1,14 +1,13 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, isDevMode } from "@angular/core";
 
 @Component({
   selector: "sammys-directions",
   templateUrl: "./directions.component.html",
 })
-export class DirectionsComponent implements OnInit {
+export class DirectionsComponent {
+  isDevMode: boolean = isDevMode();
 
-  constructor() { }
+  latitude: number = 39.7308736;
 
-  ngOnInit() {
-  }
-
+  longitude: number = -84.1406749;
 }

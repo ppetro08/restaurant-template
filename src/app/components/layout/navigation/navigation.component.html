@@ -1,7 +1,8 @@
 <div class="navigation-container">
     <div class="logo">Sammy's Food Mart</div>
     <div class="navigation-items">
-        <a class="navigation-item" routerLink="/{{navigationModel.route}}" *ngFor="let navigationModel of navigationModels">
+        <!-- TODO: How to set active styles -->
+        <a class="navigation-item" [routerLink]="navigationModel.route" *ngFor="let navigationModel of navigationModels">
             {{navigationModel?.label}}
         </a>
     </div>

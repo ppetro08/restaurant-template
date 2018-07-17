@@ -1,3 +1,6 @@
-<p>
-  directions works!
-</p>
+<div class="header">Directions</div>
+
+<div class="google-maps google-maps-placeholder"> Google Maps Placeholder</div>
+<agm-map class="google-maps" *ngIf="!isDevMode" [zoom]="17" [latitude]="latitude" [longitude]="longitude">
+  <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+</agm-map>

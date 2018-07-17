@@ -37,6 +37,9 @@
             &:hover {
                 background-color: mat-color($primary, 500);
             }
+            &:active {
+                background-color: mat-color($primary, 600);
+            }
         }
     }
 }
