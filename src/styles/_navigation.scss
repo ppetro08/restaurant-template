@@ -1,0 +1,42 @@
+@import '~@angular/material/theming';
+.navigation-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: mat-color($primary, 900);
+    color: #E9E58E;
+    font-size: 15px;
+    height: 70px;
+    .logo {
+        width: 275px;
+        padding: 0 .5em;
+        display: flex;
+        align-items: center;
+        font-size: 2em;
+        color: #fff;
+        cursor: pointer;
+        &:hover {
+            background-color: mat-color($primary, 500);
+        }
+    }
+    .navigation-items {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        font-weight: bold;
+        .navigation-item {
+            display: flex;
+            align-items: center;
+            margin-right: 1em;
+            padding: 0 1em;
+            text-decoration: unset;
+            color: #fff;
+            cursor: pointer;
+            &:last-child {
+                margin-right: 0;
+            }
+            &:hover {
+                background-color: mat-color($primary, 500);
+            }
+        }
+    }
+}
