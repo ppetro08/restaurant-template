@@ -1,11 +1,16 @@
 import { NgModule } from "@angular/core";
 
 import { HotDealsComponent } from "./hot-deals.component";
+import { HotDealContainerComponent } from "./hot-deal-container/containers/hot-deal-container.component";
+import { DependenciesModule } from "../dependencies.module";
 
 @NgModule({
-    imports: [],
-    exports: [],
-    declarations: [HotDealsComponent],
-    providers: [],
+    imports: [
+        DependenciesModule
+    ],
+    declarations: [
+        HotDealsComponent,
+        HotDealContainerComponent
+    ]
 })
 export class HotDealsModule { }

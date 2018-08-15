@@ -1,6 +1,5 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
 
 import { AppComponent } from "./app.component";
 import { NavigationModule } from "./components/layout/navigation/navigation.module";
@@ -14,7 +13,7 @@ import { DependenciesModule } from "./components/dependencies.module";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

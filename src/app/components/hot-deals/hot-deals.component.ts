@@ -1,14 +1,16 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
+import { HotDealsService } from "./services/hot-deals.service";
+import { HotDealModel } from "./models/hot-deal.model";
 
 @Component({
   selector: "sammys-hot-deals",
   templateUrl: "./hot-deals.component.html",
+  providers: [HotDealsService]
 })
-export class HotDealsComponent implements OnInit {
+export class HotDealsComponent {
+  hotDeals: HotDealModel[];
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private hotDealsService: HotDealsService) {
+    this.hotDeals = this.hotDealsService.getHotDeals();
   }
-
 }

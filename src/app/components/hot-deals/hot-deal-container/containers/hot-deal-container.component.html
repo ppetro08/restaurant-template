@@ -1,0 +1,13 @@
+<div class="hot-deal-container">
+    <div class="hot-deal-image" *ngIf="hotDeal?.imageUrl">
+        <img [src]="hotDeal?.imageUrl" />
+    </div>
+    <div class="hot-deal-information">
+        <div class="hot-deal-item-name">
+            {{hotDeal?.name}}
+        </div>
+        <div class="hot-deal-item-cost">
+            {{hotDeal?.cost | currency}}
+        </div>
+    </div>
+</div>
